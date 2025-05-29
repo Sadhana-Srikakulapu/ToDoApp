@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://sadhanasrikakulapu8:<db_password>@todoapp.p4qet5h.mongodb.net/ToDo')
+mongoose.connect("mongodb+srv://sadhanasrikakulapu8:DUzuZBKfJA2MMbmT@todoapp.p4qet5h.mongodb.net/")
     .then(() => console.log("connected to MongoDB"))
     .catch(err => console.error("MongoDB connection error:", err));
 const trySchema = new mongoose.Schema({
